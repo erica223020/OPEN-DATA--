@@ -6,6 +6,6 @@ for(let i=0; i<total; i++){
     if(data[i].CurNum>1){
     let doctor = data[i].EmployeeName;
     let wait = data[i].CurNum;
-    console.log(doctor+'醫師的診間目前須等候'+wait+'位');
+    console.log(doctor+'醫師的診間目前還須等候'+wait+'位');
  }
 }
