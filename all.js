@@ -1,13 +1,12 @@
-let next = document.querySelector('.next');
-let back = document.querySelector('.back');
+let next = document.getElementById('next');
+let back = document.getElementById('back');
 
-next.addEventListener('click',goNext,false);
-back.addEventListener('click',goBack,false);
-
-function goNext(){
-    window.history.forward();
-}
-
-function goBack(){
-    window.history.back();
+if(next) {
+    next.onclick = function (){
+        window.history.forward();
+    }
+}else {
+    back.onclick = function () {
+        window.history.back();
+    }
 }
